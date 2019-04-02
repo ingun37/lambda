@@ -4,4 +4,4 @@
 
 (deftest a-test
   (testing "FIXME, I fail."
-    (is (= (par) 1))))
+    (is (= (numcheck(S (S n2))) 4))))
