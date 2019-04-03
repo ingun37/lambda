@@ -18,7 +18,7 @@
 (def AND (curry (fn [x y] ((x y) F))))
 (def OR (curry (fn [x y] ((x T) y))))
 (def NOT (curry (fn [x] ((x F) T))))
-
+(def Z (curry (fn [x] (((x F) NOT) F))))
 (defn -main
   "I don't do a whole lot ... yet."
   [& args]
