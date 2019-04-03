@@ -16,6 +16,7 @@
 (def T (curry (fn [a b] a)))
 (def F (curry (fn [a b] b)))
 (def AND (curry (fn [x y] ((x y) F))))
+(def OR (curry (fn [x y] ((x T) y)))) ;λxy.x(λuv.u)y ≡ λxy.xTy
 (defn -main
   "I don't do a whole lot ... yet."
   [& args]
