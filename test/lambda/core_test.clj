@@ -15,6 +15,8 @@
            (is (= (boolcheck (AND T F)) false))
            (is (= (boolcheck (OR F T)) true))
            (is (= (boolcheck (OR F F)) false))
+           (is (= (boolcheck (NOT F)) true))
+           (is (= (boolcheck (NOT T)) false))
 ;    (is (= (numcheck(S (S n2))) 4))
 ;    (is (= (numcheck(n4 S n2)) 6))
     ;(is (= (numcheck(M n3 n2)) 6))
